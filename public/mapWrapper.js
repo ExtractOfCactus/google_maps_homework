@@ -33,6 +33,10 @@ MapWrapper.prototype = {
     this.markers.forEach(function(marker) {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     })
+  },
+
+  setLocation: function() {
+    this.googleMap.setCenter({lat:56.462018, lng:-2.970721})
   }
 
 };
